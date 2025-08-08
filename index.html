@@ -12,8 +12,8 @@
   />
   <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
 
-  <!-- ✅ Add Inter font from Google Fonts HERE -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+  <!-- ✅ Add Geist font from Google Fonts HERE -->
+ <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
 
   <style>
     body { margin: 0; padding: 0; }
@@ -21,9 +21,12 @@
 
     /* ✅ Add this for ALL popup styling */
    .custom-popup {
-  text-align: center;
-  font-family: Inter;
+ text-align: center;
+  font-family: Geist;
   padding: 10px;
+  color: #2F302F;
+  background color; #f0eeea;
+  border-radius: 6px;
 }
 .custom-popup .address {
   font-size: 0.75em;
@@ -62,7 +65,7 @@
   padding: 10px;
   border-radius: 5px;
   z-index: 1;
-  font-family: Inter, sans-serif;
+  font-family: Geist, sans-serif;
 }
 
 #legend button {
@@ -76,7 +79,7 @@
   color: white;
   border-radius: 3px;
   font-size: 0.9em;
-  font-family: Inter, sans-serif;
+  font-family: Geist, sans-serif;
 }
 
 #legend button img {
@@ -156,7 +159,7 @@ function showTooltip(message) {
     tooltip.style.padding = '6px 12px';
     tooltip.style.borderRadius = '4px';
     tooltip.style.fontSize = '0.9em';
-    tooltip.style.fontFamily = 'Inter, sans-serif';
+    tooltip.style.fontFamily = 'Geist, sans-serif';
     tooltip.style.zIndex = 10;
     document.body.appendChild(tooltip);
   }
@@ -1042,4 +1045,5 @@ document.querySelectorAll('#legend button').forEach(button => {
 </script>
 </body>
 </html>
+
 
